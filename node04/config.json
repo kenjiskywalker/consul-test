@@ -1,0 +1,8 @@
+{
+  "node_name": "node04",
+  "data_dir": "./node04/",
+  "bind_addr": "127.0.0.4",
+  "client_addr": "127.0.0.4",
+  "ui_dir": "./dist/",
+  "domain": "foo"
+}

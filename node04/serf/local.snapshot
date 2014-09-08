@@ -1,0 +1,82 @@
+alive: node03 127.0.0.3:8301
+alive: node02 127.0.0.2:8301
+clock: 3
+alive: node01 127.0.0.1:8301
+event-clock: 3
+event-clock: 4
+event-clock: 5
+clock: 4
+not-alive: node01
+not-alive: node02
+clock: 5
+leave
+alive: node03 127.0.0.3:8301
+alive: node02 127.0.0.2:8301
+clock: 6
+alive: node01 127.0.0.1:8301
+event-clock: 2
+event-clock: 3
+clock: 7
+not-alive: node01
+clock: 8
+not-alive: node02
+leave
+alive: node03 127.0.0.3:8301
+alive: node02 127.0.0.2:8301
+clock: 9
+alive: node01 127.0.0.1:8301
+clock: 10
+not-alive: node01
+clock: 11
+not-alive: node02
+leave
+alive: node03 127.0.0.3:8301
+alive: node01 127.0.0.1:8301
+clock: 1
+alive: node02 127.0.0.2:8301
+clock: 12
+clock: 13
+not-alive: node01
+clock: 14
+not-alive: node02
+leave
+alive: node03 127.0.0.3:8301
+alive: node01 127.0.0.1:8301
+clock: 1
+alive: node02 127.0.0.2:8301
+clock: 15
+clock: 16
+not-alive: node01
+clock: 17
+not-alive: node02
+leave
+alive: node03 127.0.0.3:8301
+alive: node01 127.0.0.1:8301
+clock: 1
+alive: node02 127.0.0.2:8301
+clock: 18
+event-clock: 1
+not-alive: node01
+clock: 19
+clock: 20
+not-alive: node02
+leave
+alive: node03 127.0.0.3:8301
+alive: node01 127.0.0.1:8301
+clock: 1
+alive: node02 127.0.0.2:8301
+clock: 21
+event-clock: 1
+alive: node04 127.0.0.4:8301
+alive: node03 127.0.0.3:8301
+clock: 25
+alive: node01 127.0.0.1:8301
+alive: node02 127.0.0.2:8301
+clock: 26
+clock: 27
+not-alive: node01
+clock: 28
+not-alive: node02
+clock: 29
+not-alive: node03
+leave

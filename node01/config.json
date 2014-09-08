@@ -1,0 +1,8 @@
+{
+  "node_name": "node01",
+  "data_dir": "./node01/",
+  "bind_addr": "127.0.0.1",
+  "client_addr": "127.0.0.1",
+  "ui_dir": "./dist/",
+  "domain": "foo"
+}

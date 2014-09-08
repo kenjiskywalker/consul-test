@@ -1,0 +1,31 @@
+alive: node01.dc1 127.0.0.1:8302
+leave
+alive: node01.dc1 127.0.0.1:8302
+leave
+clock: 1
+alive: node01.dc1 127.0.0.1:8302
+leave
+alive: node01.dc1 127.0.0.1:8302
+leave
+alive: node01.dc1 127.0.0.1:8302
+leave
+clock: 1
+alive: node01.dc1 127.0.0.1:8302
+leave
+clock: 2
+alive: node01.dc1 127.0.0.1:8302
+leave
+clock: 3
+alive: node01.dc1 127.0.0.1:8302
+leave
+alive: node01.dc1 127.0.0.1:8302
+leave
+clock: 1
+alive: node01.dc1 127.0.0.1:8302
+leave
+alive: node01.dc1 127.0.0.1:8302
+leave
+clock: 1
+alive: node01.dc1 127.0.0.1:8302
+leave
+clock: 2
