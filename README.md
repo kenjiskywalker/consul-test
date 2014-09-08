@@ -80,7 +80,7 @@ $ consul members -detailed
 #### 4-2. 名前解決でも確認
 
 ```
-$ dig @127.0.0.1 -p 8600 node0{1,2,3,4}.node.foo.
+$ dig @127.0.0.1 -p 8600 node0{1,2,3,4}.node.consul.
 ```
 
 ### 5. 停止

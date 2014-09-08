@@ -3,6 +3,5 @@
   "data_dir": "./node03/",
   "bind_addr": "127.0.0.3",
   "client_addr": "127.0.0.3",
-  "ui_dir": "./dist/",
-  "domain": "foo"
+  "ui_dir": "./dist/"
 }
