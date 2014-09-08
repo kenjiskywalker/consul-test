@@ -1,6 +1,21 @@
 
 # Consulのテスト環境構築(OS X)
 
+## できること
+
+```
+Node    Address         Status  Type    Build  Protocol
+node01  127.0.0.1:8301  alive   server  0.4.0  2
+node02  127.0.0.2:8301  alive   server  0.4.0  2
+node03  127.0.0.3:8301  alive   server  0.4.0  2
+node04  127.0.0.4:8301  alive   client  0.4.0  2
+```
+
+のConsul Clusterをスクリプトで簡単に構築できる
+
+
+## 手順
+
 ### 1. loopbackのエイリアスを貼る
 
 [Mac OS X – Adding a loopback alias](http://astralbodi.es/2011/02/04/mac-os-x-adding-a-loopback-alias/)
