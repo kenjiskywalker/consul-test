@@ -28,7 +28,17 @@ $ brew cask install consul
 $ consul -h
 ```
 
+### 3. このリポジトリのファイルのダウンロード
+
+```
+$ git clone git@github.com:kenjiskywalker/consul-test.git
+$ cd consul-test/
+
+```
+
 ### 3. consulのweb uiのダウンロード
+
+> ./consul-test/
 
 [http://www.consul.io/downloads_web_ui.html](http://www.consul.io/downloads_web_ui.html)
 
@@ -39,9 +49,10 @@ $ unzip ./web_ui.zip
 
 ### 4. 起動
 
+> ./consul-test/
+
+
 ```
-$ git clone git@github.com:kenjiskywalker/consul-test.git
-$ cd consul-test/
 $ sudo ./consul-start.sh
 
 # 確認
@@ -59,6 +70,8 @@ $ dig @127.0.0.1 -p 8600 node0{1,2,3,4}.node.foo.
 ```
 
 ### 5. 停止
+
+> ./consul-test/
 
 ```
 $ sudo ./consul-stop.sh
