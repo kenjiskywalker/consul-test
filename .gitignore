@@ -1,2 +1,6 @@
 *web_ui.zip
 dist
+*/raft
+*/serf
+*.mdb
+*.snapshot
