@@ -1,7 +1,7 @@
 
 # Consulのテスト環境構築(OS X)
 
-1. loopbackのエイリアスを貼る
+### 1. loopbackのエイリアスを貼る
 
 [Mac OS X – Adding a loopback alias](http://astralbodi.es/2011/02/04/mac-os-x-adding-a-loopback-alias/)
 
@@ -15,7 +15,7 @@ $ sudo ifconfig lo0 alias 127.0.0.4
 $ ifconfig lo0
 ```
 
-2. consulのインストール
+### 2. consulのインストール
 
 [http://www.consul.io/intro/getting-started/install.html](http://www.consul.io/intro/getting-started/install.html)
 
@@ -28,7 +28,7 @@ $ brew cask install consul
 $ consul -h
 ```
 
-3. consulのweb uiのダウンロード
+### 3. consulのweb uiのダウンロード
 
 [http://www.consul.io/downloads_web_ui.html](http://www.consul.io/downloads_web_ui.html)
 
@@ -37,7 +37,7 @@ $ curl -L -o ./web_ui.zip https://dl.bintray.com/mitchellh/consul/0.4.0_web_ui.z
 $ unzip ./web_ui.zip
 ```
 
-2. 起動
+### 4. 起動
 
 ```
 $ git clone git@github.com:kenjiskywalker/consul-test.git
@@ -48,17 +48,17 @@ $ sudo ./consul-start.sh
 $ consul members -detailed
 ```
 
-ウェブでも確認
+#### 4-1. ウェブでも確認
 
 [http://localhost:8500](http://localhost:8500)
 
-名前解決でも確認
+#### 4-2. 名前解決でも確認
 
 ```
 $ dig @127.0.0.1 -p 8600 node0{1,2,3,4}.node.foo.
 ```
 
-3. 停止
+### 5. 停止
 
 ```
 $ sudo ./consul-stop.sh
