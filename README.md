@@ -90,3 +90,15 @@ $ dig @127.0.0.1 -p 8600 node0{1,2,3,4}.node.consul.
 ```
 $ sudo ./consul-stop.sh
 ```
+
+### 6. loopbackのエイリアスを削除
+
+```
+# 削除
+$ sudo ifconfig lo0 -alias 127.0.0.2
+$ sudo ifconfig lo0 -alias 127.0.0.3
+$ sudo ifconfig lo0 -alias 127.0.0.4
+
+# 確認
+$ ifconfig lo0
+```
