@@ -40,6 +40,8 @@ $ unzip ./web_ui.zip
 2. 起動
 
 ```
+$ git clone git@github.com:kenjiskywalker/consul-test.git
+$ cd consul-test/
 $ sudo ./consul-start.sh
 
 # 確認
