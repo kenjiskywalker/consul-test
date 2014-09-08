@@ -1,5 +1,5 @@
 
-# 簡単にConsulをテストできるようにするメモ(OS X)
+# Consulのテスト環境構築(OS X)
 
 1. loopbackのエイリアスを貼る
 
