@@ -108,3 +108,90 @@ $ ifconfig lo0
 
 watches で nodes を見るようにして  
 nodeの増減時に特定のスクリプトを実行するようにした
+
+
+```
+['-']% head node0*/_hosts
+==> node01/_hosts <==
+node01   127.0.0.1
+node02   127.0.0.2
+node03   127.0.0.3
+node04   127.0.0.4
+
+==> node02/_hosts <==
+node01   127.0.0.1
+node02   127.0.0.2
+node03   127.0.0.3
+node04   127.0.0.4
+
+==> node03/_hosts <==
+node01   127.0.0.1
+node02   127.0.0.2
+node03   127.0.0.3
+node04   127.0.0.4
+
+==> node04/_hosts <==
+node01   127.0.0.1
+node02   127.0.0.2
+node03   127.0.0.3
+node04   127.0.0.4
+['-']%
+['-']% consul leave -rpc-addr=127.0.0.4:8400
+    2014/09/09 22:47:37 [INFO] agent.rpc: Accepted client: 127.0.0.4:60046
+    2014/09/09 22:47:37 [INFO] agent.rpc: Graceful leave triggered
+    2014/09/09 22:47:37 [INFO] consul: client starting leave
+    2014/09/09 22:47:38 [INFO] serf: EventMemberLeave: node04 127.0.0.4
+    2014/09/09 22:47:38 [INFO] serf: EventMemberLeave: node04 127.0.0.4
+    2014/09/09 22:47:38 [INFO] agent: requesting shutdown
+    2014/09/09 22:47:38 [INFO] consul: shutting down client
+Graceful leave complete
+    2014/09/09 22:47:38 [INFO] agent: shutdown complete
+['-']%
+['-']%
+['-']% head node0*/_hosts
+==> node01/_hosts <==
+node01   127.0.0.1
+node02   127.0.0.2
+node03   127.0.0.3
+
+==> node02/_hosts <==
+node01   127.0.0.1
+node02   127.0.0.2
+node03   127.0.0.3
+
+==> node03/_hosts <==
+node01   127.0.0.1
+node02   127.0.0.2
+node03   127.0.0.3
+
+==> node04/_hosts <==
+node01   127.0.0.1
+node02   127.0.0.2
+node03   127.0.0.3
+['-']%
+['-']%
+['-']% head node0*/_hosts
+==> node01/_hosts <==
+node01   127.0.0.1
+node02   127.0.0.2
+
+==> node02/_hosts <==
+node01   127.0.0.1
+node02   127.0.0.2
+
+==> node03/_hosts <==
+node01   127.0.0.1
+node02   127.0.0.2
+
+==> node04/_hosts <==
+node01   127.0.0.1
+node02   127.0.0.2
+node03   127.0.0.3
+['-']%
+['-']% ls -la  node0*/_hosts
+-rw-r--r--  1 root  staff  36  9  9 22:48 node01/_hosts
+-rw-r--r--  1 root  staff  36  9  9 22:48 node02/_hosts
+-rw-r--r--  1 root  staff  36  9  9 22:48 node03/_hosts
+-rw-r--r--  1 root  staff  54  9  9 22:47 node04/_hosts
+['-']%
+```
