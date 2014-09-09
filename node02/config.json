@@ -3,5 +3,11 @@
   "data_dir": "./node02/",
   "bind_addr": "127.0.0.2",
   "client_addr": "127.0.0.2",
-  "ui_dir": "./dist/"
+  "ui_dir": "./dist/",
+  "watches": [
+    {
+      "type": "nodes",
+      "handler": "./node02/hosts_update.rb"
+    }
+  ]
 }

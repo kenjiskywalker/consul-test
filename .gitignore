@@ -4,3 +4,4 @@ dist
 */serf
 *.mdb
 *.snapshot
+_hosts
