@@ -169,6 +169,21 @@ node01   127.0.0.1
 node02   127.0.0.2
 node03   127.0.0.3
 ['-']%
+['-']% consul leave -rpc-addr=127.0.0.3:8400
+    2014/09/09 22:48:27 [INFO] agent.rpc: Accepted client: 127.0.0.3:60053
+    2014/09/09 22:48:27 [INFO] agent.rpc: Graceful leave triggered
+    2014/09/09 22:48:27 [INFO] consul: server starting leave
+    2014/09/09 22:48:27 [INFO] serf: EventMemberLeave: node03.dc1 127.0.0.3
+    2014/09/09 22:48:27 [INFO] consul: removing server node03.dc1 (Addr: 127.0.0.3:8300) (DC: dc1)
+    2014/09/09 22:48:27 [INFO] serf: EventMemberLeave: node03 127.0.0.3
+    2014/09/09 22:48:27 [INFO] consul: removing server node03 (Addr: 127.0.0.3:8300) (DC: dc1)
+    2014/09/09 22:48:27 [INFO] raft: Removed ourself, transitioning to follower
+    2014/09/09 22:48:27 [INFO] agent: requesting shutdown
+    2014/09/09 22:48:27 [INFO] consul: shutting down server
+Graceful leave complete
+    2014/09/09 22:48:27 [ERR] http: Request /v1/catalog/nodes?index=514, error: rpc error: unexpected EOF
+    2014/09/09 22:48:27 [INFO] agent: shutdown complete
+['-']%
 ['-']%
 ['-']% head node0*/_hosts
 ==> node01/_hosts <==
