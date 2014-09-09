@@ -3,7 +3,6 @@
 require 'json'
 
 nodes = JSON.load(STDIN.gets)
-
 hosts_file = "./node01/_hosts"
 
 File.open(hosts_file, "w") do |f|
