@@ -102,3 +102,9 @@ $ sudo ifconfig lo0 -alias 127.0.0.4
 # 確認
 $ ifconfig lo0
 ```
+
+
+## watchesでnodes を監視する
+
+watches で nodes を見るようにして  
+nodeの増減時に特定のスクリプトを実行するようにした
