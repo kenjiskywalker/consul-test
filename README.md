@@ -67,7 +67,7 @@ $ unzip ./web_ui.zip
 
 
 ```
-$ sudo ./consul-start.sh
+$ sh ./consul-start.sh
 
 # 確認
 $ consul members -detailed
@@ -88,7 +88,7 @@ $ dig @127.0.0.1 -p 8600 node0{1,2,3,4}.node.consul.
 > /consul-test/
 
 ```
-$ sudo ./consul-stop.sh
+$ sh ./consul-stop.sh
 ```
 
 ### 6. loopbackのエイリアスを削除
